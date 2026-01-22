@@ -368,7 +368,7 @@
     height: 300px;
     border: 4px solid white;
     border-radius: 1000px;
-    background-image: url(assets/background.jpg);
+    background-image: url(assets/background.png);
     object-fit: contain;
     background-position: center;
     background-repeat: no-repeat;
