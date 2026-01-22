@@ -194,6 +194,7 @@
     display: flex;
     align-items: center;
     color: white;
+    background-image: url(assets/background.png);
   }
   .intro-area h1 {
     font-size: 36px;
