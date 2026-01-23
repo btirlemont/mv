@@ -210,6 +210,14 @@
   
   /* mobile breakpoint start */
   @media screen and (max-width: 925px) {
+    .header-area {
+      background-position: left;
+    }
+        
+    .btn-nav-a img {
+      width: 100%!important;
+      border-radius: 0px!important;
+  }
     .container {
       max-width: 720px;
     }
@@ -472,11 +480,6 @@
         }
         .realisation {
             width: 100%;    
-        }
-        
-        .btn-nav-a img {
-            width: 100%!important;
-            border-radius: 0px!important;
         }
       }
 
