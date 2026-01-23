@@ -526,6 +526,9 @@
       position: inherit;
       left: auto;
   }
+  .intro-galerie-area {
+    height: 30vh;
+  }
 }
 
 
