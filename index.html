@@ -6,21 +6,22 @@
     <title>Mathieu Verbrugghe</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <header class="header-area">
         
-        <div class="navbar-area">
+        <div class="navbar-area" data-aos="fade-down">
             <div class="container">
                 <nav class="site-navbar">
-                    <a href="." class="site-logo">
+                    <a href="index.html" class="site-logo">
                         <img src="assets/logo-mv.png" alt="" style="height: 60px;">
-                        <p style="margin: 0; padding: 0;">Mathieu <span>VERBRUGGHE</span></p></a>
+                        <p style="margin: 0; padding: 0; color: var(--secondary);">Mathieu <span>VERBRUGGHE</span></p></a>
                     <ul>
-                        <li><a href="#" class="btn-nav-a"><button class="btn-nav">Devis gratuit</button></a></li>
-                        <li><a href="galerie">Galerie</a></li>
-                        <li><a href="#">A propos</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <!-- <li><a href="#">A propos</a></li> -->
+                        <li><a href="tel:+33612345678" class="btn-nav-a"><img src="assets/phone.png" style="width: 150px; border-radius: 100px;" alt=""></a></li>
                     </ul>
                     <button class="nav-toggler">
                         <span></span>
@@ -30,16 +31,34 @@
         </div>
 
         <div class="intro-area">
-            <div class="container">
-                <h1>Votre artisan du sur-mesure</h1>
-                <p>Composez le mobilier qui vous fait envie</p>
+            <div class="container" data-aos="zoom-in-right" data-aos-duration="2000">
+                <h1>Prenez soin de ce qui vous abrite</h1>
+                <p>Je vous accompagne dans le Cambrésis pour vos projets.</p>
                 <div class="buttons">
-                    <button class="btn-main">Demander un devis <span class="small">(gratuit)</span></button>
-                    <a class="button-home" href="galerie"><button class="btn-secondary">Mes réalisations <span class="small">&nbsp;</span></button></a>
+                    <button class="btn-main openContactModal">Demander un devis <span class="small">(gratuit)</span></button>
+                    <a class="button-home" href="galerie.html"><button class="btn-secondary">Mes réalisations</button></a>
                 </div>
             </div>
         </div>
     </header>  
+
+    <div class="contact-modal-overlay" id="contactModal">
+        <div class="contact-modal">
+          <button class="contact-modal-close" id="closeContactModal">&times;</button>
+      
+          <h3>Choisissez le moyen de me contacter</h3>
+      
+          <div class="contact-options">
+            <a href="mailto:contact@tonsite.fr" class="contact-option mail">
+              📧 Par mail
+            </a>
+      
+            <a href="tel:+33612345678" class="contact-option phone">
+              📞 Par téléphone
+            </a>
+          </div>
+        </div>
+      </div>
 
     <section>
 
@@ -47,44 +66,44 @@
 
             <div class="container">
 
-            <h2 style="margin-top: 15%; margin-bottom: 5%; font-weight: 600; font-size: 26px;">Faire appel à Montay Menuiserie, <br>
+            <h2 style="margin-top: 15%; margin-bottom: 5%; font-weight: 600; font-size: 26px;">Faire appel à nos services, <br>
             C'est <span class="color-main">simple</span> et <span class="color-secondary">efficace</span>!</h2>
 
             <div class="processus">
-                <div class="step">
-                <img src="assets/montay.png" alt="" style="height: 250px">
-                <p>Vous désirez un dressing de <br> qualité sur mesure</p>
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/step1.png" alt="" style="height: 170px">
+                <p>On établit un devis sur ce qu’il est possible de faire pour votre projet</p>
                 </div>
                 <div class="line"></div>
-                <div class="step">
-                <img src="assets/montay.png" alt="" style="height: 250px">
-                <p>Je fabrique votre dressing <br> dans mon atelier</p>
+                <div class="step" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/step2.png" alt="" style="height: 170px">
+                <p>Je prépare les matériaux <br> nécessaires à la prestation.</p>
                 </div>
                 <div class="line"></div>
-                <div class="step">
-                <img src="assets/montay.png" alt="" style="height: 250px">
-                <p>Vous décidez qui pose, <br> vous ou moi ?</p>
+                <div class="step" data-aos="fade-up" data-aos-delay="700">
+                <img src="assets/step3.png" alt="" style="height: 170px">
+                <p>Je viens réaliser les travaux <br> à votre domicile.</p>
                 </div>
             </div>
 
-            <center><button class="btn-main" style="margin-top: 5%;">Demander un devis <span class="small">(gratuit)</span></button></center>
+            <center><button class="btn-main openContactModal" style="margin-top: 5%;" data-aos="fade-down" data-aos-delay="900">Demander un devis <span class="small">(gratuit)</span></button></center>
 
             </div>  
             
         </div> 
 
-        <div class="content-jc">
+        <div class="content-mv">
             <div class="container">
 
-            <div class="jc">
+            <div class="mv">
 
                 <div class="pic">
-                <div class="image"></div>
+                <div class="image" data-aos="flip-left" data-aos-delay="100"></div>
                 </div>
-                <div class="infos">
-                <h3>Jean-Claude Montay</h3>
-                <h4 style="margin-bottom: 3%;">Votre artisan</h4>
-                <p>“Passionné de menuiserie, je suis un artisan spécialisé dans la création de meubles sur mesure. Avec une expertise solide et un souci du détail, je m'efforce de donner vie aux idées et aux besoins uniques de mes clients à travers mes réalisations. Chaque pièce que je conçois est le fruit d'un travail artisanal méticuleux, alliant qualité, fonctionnalité et esthétique.”</p>
+                <div class="infos" data-aos="zoom-in-up" data-aos-delay="200">
+                <h3>Mathieu Verbrugghe</h3>
+                <h4 style="margin-bottom: 3%;">Votre couvreur</h4>
+                <p>“Couvreur experimenté depuis 2008 et diplômé des compagnons, je réalise tout type de travaux liés à votre toiture. Réalisation de couverture diverses, bardage, anti-mousse, charpentes et maçonnerie.”</p>
                 </div>
 
             </div>
@@ -95,42 +114,65 @@
         <div class="content-realisations">
             <div class="container">
 
-            <h2 class="text-center desktop" style="font-weight: bold; margin-bottom: 8vh;">Mes dernières réalisations</h2>
-            <h2 class="text-center mobile" style="font-weight: bold; margin-bottom: 8vh;">Ma dernière réalisation</h2>
+            <h2 class="text-center desktop" style="font-weight: bold; margin-bottom: 8vh;" data-aos="fade-up" data-aos-delay="100">Mes dernières réalisations</h2>
+            <h2 class="text-center mobile" style="font-weight: bold; margin-bottom: 8vh;" data-aos="fade-up" data-aos-delay="100">Ma dernière réalisation</h2>
 
             <div class="realisations">
 
+                <div class="realisation" data-aos="fade-up" data-aos-delay="300">
+                    <div class="img" style="background-image: url(assets/prestation/charpente-1/photo4.jpg);"></div>
+                    <p>Charpente traditionnelle</p>
+                  </div>
+          
+                  <div class="realisation desktop" data-aos="fade-up" data-aos-delay="600">
+                    <div class="img" style="background-image: url(assets/prestation/extension-marcoing/photo4.jpg);"></div>
+                    <p>Extension complète</p>
+                  </div>
+          
+                  <div class="realisation desktop" data-aos="fade-up" data-aos-delay="900">
+                    <div class="img" style="background-image: url(assets/prestation/gouttiere/photo3.jpg);"></div>
+                    <p>Gouttière en zinc</p>
+                  </div>
+
             </div>
 
-            <center><a href="galerie"><button class="btn-secondary" style="margin-top: 8vh;">Mes réalisations <span class="small">&nbsp;</span></button></a></center>
+            <center><a href="galerie.html"><button class="btn-secondary" style="margin-top: 8vh;" data-aos="fade-down" data-aos-delay="400">Mes réalisations</button></a></center>
 
             </div>
         </div>
 
     </section>
 
-    <script>
-    fetch("data/prestations.json")
-    .then(res => res.json())
-    .then(prestations => {
-        const container = document.getElementById("realisations");
-
-        prestations.forEach(p => {
-        const div = document.createElement("div");
-        div.className = "realisation";
-
-        div.innerHTML = `
-            <div class="img" style="background-image: url('${p.photo_1}');"></div>
-            <p>${p.nom} à ${p.ville}</p>
-        `;
-
-        container.appendChild(div);
-        });
-    })
-    .catch(err => {
-        console.error("Erreur chargement prestations :", err);
-    });
-    </script>
+    
+    <footer class="site-footer">
+        <div class="footer-inner">
+      
+          <!-- Gauche -->
+          <div class="footer-left">
+            <div class="footer-title">
+              Mathieu Verbrugghe Couvreur Zingueur Charpentier
+            </div>
+            <a href="mentions-legales.html" class="footer-legal">
+              Mentions légales
+            </a>
+          </div>
+      
+          <!-- Droite -->
+          <div class="footer-right">
+            <div class="footer-social">
+              Suivez moi sur Facebook :
+              <a href="https://www.facebook.com/profile.php?id=61579261591087" target="_blank" class="facebook-icon" aria-label="Facebook">
+                <img src="assets/facebook.png" alt="facebook" style="width: 20px;">
+              </a>
+            </div>
+      
+            <div class="footer-phone">
+              2026 - eden.creative
+            </div>
+          </div>
+      
+        </div>
+      </footer>
 
     <script>
     const navToggler = document.querySelector('.nav-toggler');
@@ -155,6 +197,34 @@
     }
     }
     </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+<script>
+    const openBtn = document.getElementsByClassName("btn-main openContactModal");
+    const modal = document.getElementById("contactModal");
+    const closeBtn = document.getElementById("closeContactModal");
+  
+    Array.from(openBtn).forEach((btn) => {
+        btn.addEventListener("click", () => {
+            modal.style.display = "flex";
+        });
+    });
+  
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  
+    // clic hors de la modale = fermer
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+  
 
 </body>
 </html>
