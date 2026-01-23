@@ -412,7 +412,7 @@
 
   .realisation {
     width: 33%;    
-    margin: auto;
+    margin: 20px;
     text-align: center;
   }
 
@@ -732,8 +732,9 @@
   align-items: center;
   gap: 15px;
   padding: 1rem;
-  border-radius: 6px;
-  background-color: #f1f1f1;
+  padding-top: 3rem;
+  border-radius: 12px;
+  background-color: #fafafa;
 }
 
 .img-realisation {
